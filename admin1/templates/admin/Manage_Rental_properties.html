@@ -1,0 +1,30 @@
+{% extends 'admin/Base.html' %}
+
+{% block style %}
+  .btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #0047AB !important;
+}
+.btn-primary:hover {
+    color: #fff;
+
+     /*set the color you want here*/
+}
+.btn-primary:hover{
+    background-color:#081D45 !important;
+}
+{% endblock style %}
+
+{% block body%}
+  <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+    <a class="btn btn-primary btn-rounded btn-primary:hover rounded-5" href="#" role="button">Add</a>
+    <button class="btn btn-primary btn-primary:hover rounded-pill" type="button">Remove</button>
+    <button class="btn btn-primary btn-primary:hover rounded-pill" type="button">Edit</button></a>
+    
+   
+    </div>
+    
+    <div class="text-center">
+      <h3>Managing rental properties</h3>
+      </div>
+        
+      {%endblock body%}
